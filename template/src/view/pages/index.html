@@ -1,0 +1,13 @@
+{% block cssLink %}
+<link type="text/css" rel="stylesheet" href="{{ STATIC_PATH }}/css/index.css" />
+{% endblock %}
+{% extends 'layout/layout.html' %}
+
+{% block mainContent %}
+	<!--<link type="text/css" rel="stylesheet" href="/static/css/ui.xxx.css"/>-->
+
+  <!--include page-->
+  {% include "pages/tpl/home/index.html" %}
+
+	<script type="text/javascript" src="{{ STATIC_PATH }}/js/view/index.js"></script>
+{% endblock %}
