@@ -105,3 +105,13 @@ dist
 
 # Mac iOS
 .DS_Store
+
+# VS Code
+.vscode
+
+# egg runtime
+run/
+
+# 
+/app/public
+/app/view
