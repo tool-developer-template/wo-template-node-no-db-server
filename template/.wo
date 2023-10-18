@@ -1,0 +1,16 @@
+#
+TYPE=node-no-db-server
+
+# branch
+BRANCH=<%= branch%>
+
+#
+CONTROLLER=app/controller/
+#
+ROUTE=app/routes
+#
+VIEW= src/view
+#
+EXTEND= app/extend
+#
+MIDDLEWARE= app/middleware
