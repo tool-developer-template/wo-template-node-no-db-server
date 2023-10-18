@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>~~</title>
+    <meta name="keywords"
+          content=""/>
+    <meta name="description"
+          content=""/>
+    <!--<meta name="robots" content="noindex, follow">-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline';object-src 'none'; img-src * chrome://favicon/*;">-->
+    <link href="{{ STATIC_PATH }}/favicon.ico" rel="Shortcut Icon">
+    {% block  cssLink %}
+    {% endblock %}
+    <!--[if lte IE 9]>
+    <link type="text/css" rel="stylesheet" href="{{ STATIC_PATH }}/css/ie.hack.css"/>
+    <![endif]-->
+    {% block cssBlock%}
+    {% endblock %}
+    <noscript>
+        <div style="text-align:center;background:#000;color:#FFF;padding:20px 0;">Sorry,Your browser does not support JavaScript!</div>
+    </noscript>
+    <script type="text/javascript" src="{{ STATIC_PATH }}/js/module.js"></script>
+    <script type="text/javascript" src="{{ STATIC_PATH }}/js/config.js"></script>
+</head>
+<body class="wp-desktop" data-current-page="{{ currentPage }}">
+    <div class="page-wrapper">
+        {% block mainTop %}
+            {% include "pages/tpl/top.html" %}
+        {% endblock %}
+        <div class="page-content"></div>
+        {% block mainContent %}{% endblock %}
+        </div>
+        {% block mainBottom %}
+            {% include "pages/tpl/bottom.html" %}
+        {% endblock %}
+    </div>
+</body>
+</html>
